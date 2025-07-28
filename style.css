@@ -1,0 +1,125 @@
+body {
+    margin:0; background:#000014; overflow:hidden;
+    font-family: 'Courier New', Courier, monospace;
+    user-select:none;
+    color:#0ff;
+  }
+  canvas {
+    display:block; margin:0 auto;
+    background:#0a001a;
+    border:3px solid #0ff;
+    box-shadow:0 0 20px #0ff;
+  }
+  #info {
+    text-align:center; font-size:18px; margin:5px 0;
+  }
+  .overlay {
+    position:fixed; top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    background:rgba(0,0,0,0.85);
+    padding:30px 50px;
+    border-radius:12px;
+    font-size:2rem;
+    text-shadow:0 0 15px #0ff;
+    user-select:none;
+    cursor:default;
+    color:#0ff;
+    min-width:300px;
+    box-sizing: border-box;
+  }
+  #gameOver, #levelUp, #confirmQuit {
+    display:none;
+  }
+  #gameOver .option, #levelUp .option, #confirmQuit .option {
+    padding: 8px 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select:none;
+  }
+  #gameOver .option.selected, #levelUp .option.selected, #confirmQuit .option.selected {
+    background: #0ff;
+    color: #000014;
+    font-weight: bold;
+    box-shadow: 0 0 15px #0ff;
+  }
+  #menu {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.9);
+    padding: 50px 80px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 30px #0ff;
+    user-select: none;
+    color: #0ff;
+  }
+  #menu button {
+    background: #0ff;
+    border: none;
+    padding: 20px 60px;
+    font-size: 2rem;
+    color: #000014;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #0ff;
+    transition: background 0.3s ease;
+    margin-top: 15px;
+  }
+  #menu button:hover, #menu button:focus {
+    background: #33ffff;
+    outline:none;
+  }
+  #startInfo {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.7);
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #0ff;
+    box-shadow: 0 0 20px #0ff;
+    user-select: none;
+    display: none;
+  }
+  select {
+    margin-top: 15px;
+    padding: 8px 12px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 0 15px #0ff;
+    background: #000a1a;
+    color: #0ff;
+    cursor: pointer;
+    user-select:none;
+  }
+  label {
+    display: block;
+    margin-top: 20px;
+    font-size: 1.3rem;
+  }
+  #timer {
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #0f0;
+    user-select:none;
+  }
+  #menuHighScore {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #0ff;
+  }
+  #newRecordMsg {
+    margin-top: 15px;
+    font-size: 1.6rem;
+    color: #0f0;
+    text-shadow: 0 0 10px #0f0;
+    font-weight: bold;
+    display: none;
+  }
